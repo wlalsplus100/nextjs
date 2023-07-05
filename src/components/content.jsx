@@ -13,12 +13,13 @@ const Content = ({ value }) => {
     ["외로워요", "설레요", "피곤해요"],
     ["상쾌해요", "의욕적이에요", "설레요"],
   ];
+  const UserEmote = [" 최고에요!", "좋아요", "그럭저럭이에요"];
 
   return (
     <>
       <Container>
         <ProfileImg src={userImg[value]} alt=""></ProfileImg>
-        <UserEmoteTxt>기분 최고에요!</UserEmoteTxt>
+        <UserEmoteTxt>{UserEmote[value]}</UserEmoteTxt>
         <ContentImg src={sampleImg[value]} alt=""></ContentImg>
         <FlexContainer>
           <TagBorder>
@@ -57,10 +58,11 @@ const ProfileImg = styled.img`
 `;
 
 const UserEmoteTxt = styled.p`
+  width: fit-content;
   margin-left: 20px;
   color: #000;
   font-size: 12px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;

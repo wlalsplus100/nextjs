@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import Day from "./day";
 import Link from "next/link";
+import styled from "@emotion/styled";
 
 export default function Main() {
   const changeDate = (YEAR, month) => {
