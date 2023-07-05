@@ -178,6 +178,13 @@ h6 {
 .notToday {
   background-color: transparent;
   color: transparent;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .notToday > img {
