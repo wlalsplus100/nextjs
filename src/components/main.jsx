@@ -97,9 +97,7 @@ export default function Main() {
             <Link href="/Details">
               <Day value={"attendance"} day={week2[3]} week={2} mood={4} />
             </Link>
-            <Link href={"/Details"}>
-              <Day value={"attendance"} day={week2[4]} week={2} />
-            </Link>
+            <Day value={"attendance"} day={week2[4]} week={2} />
             <Day value={""} day={week2[5]} week={2} />
             <Day value={""} day={week2[6]} week={2} />
 
