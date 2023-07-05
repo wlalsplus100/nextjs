@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
-import { css } from "@emotion/react";
+import { css } from "@emotion/css";
 import Day from "./day";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -82,17 +83,39 @@ export default function Main() {
           </div>
           <div className="month">
             {/* <div className="week1 week"> */}
+
             <Day value={"attendance"} day={week1[0]} week={1} />
             <Day value={"attendance"} day={week1[1]} week={1} />
             <Day value={"attendance"} day={week1[2]} week={1} />
             <Day value={"attendance"} day={week1[3]} week={1} />
             <Day value={"attendance"} day={week1[4]} week={1} />
             <Day value={"attendance"} day={week1[5]} week={1} />
-            <Day value={"attendance"} day={week1[6]} week={1} />
+            <Link
+              href="/Details"
+              className={css`
+                text-decoration: none;
+              `}
+            >
+              <Day value={"attendance"} day={week1[6]} week={1} />
+            </Link>
             {/* </div> */}
             {/* <div className="week2 week"> */}
-            <Day value={"attendance"} day={week2[0]} week={2} />
-            <Day value={"attendance"} day={week2[1]} week={2} />
+            <Link
+              href="/Details"
+              className={css`
+                text-decoration: none;
+              `}
+            >
+              <Day value={"attendance"} day={week2[0]} week={2} />
+            </Link>
+            <Link
+              href="/Details"
+              className={css`
+                text-decoration: none;
+              `}
+            >
+              <Day value={"attendance"} day={week2[1]} week={2} />
+            </Link>
             <Day value={""} day={week2[2]} week={2} />
             <Day value={""} day={week2[3]} week={2} />
             <Day value={""} day={week2[4]} week={2} />

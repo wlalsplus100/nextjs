@@ -32,7 +32,7 @@ const Day = ({ value, day, week }) => {
     return (
       <>
         <div className="day">
-          <p className="date">{day}</p>
+          <p className="date link">{day}</p>
           <img
             src="nomalDduk.png"
             alt=""
