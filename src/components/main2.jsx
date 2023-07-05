@@ -3,7 +3,7 @@ import Day from "./day";
 import Link from "next/link";
 import styled from "@emotion/styled";
 
-export default function Main() {
+export default function Main2() {
   const changeDate = (YEAR, month) => {
     //이전 날짜
     let PVLastDate = new Date(YEAR, month - 1, 0).getDate();
@@ -98,7 +98,7 @@ export default function Main() {
               <Day value={"attendance"} day={week2[3]} week={2} mood={4} />
             </Link>
             <Link href={"/Details"}>
-              <Day value={"attendance"} day={week2[4]} week={2} />
+              <Day value={"attendance"} day={week2[4]} week={2} mood={2} />
             </Link>
             <Day value={""} day={week2[5]} week={2} />
             <Day value={""} day={week2[6]} week={2} />
