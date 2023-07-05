@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.introduction > h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.introduction p {
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.container {
+  background-color: #fff;
+  width: 334px;
+  min-height: 518px;
+}
+
+.menubar {
+  position: relative;
+}
+
+.bar {
+  position: absolute;
+  width: 22px;
+  margin-left: 1em;
+  margin-top: 72px;
+}
+
+.gear {
+  position: absolute;
+  width: 22px;
+  margin-left: 43px;
+  margin-top: 72px;
+}
+
+.status {
+  position: absolute;
+  width: 22px;
+  margin-left: 331px;
+  margin-top: 72px;
+}
+.timeline {
+  position: absolute;
+  width: 22px;
+  margin-top: 72px;
+  margin-left: 373px;
+}
+
+.introduction {
+  padding-top: 124px;
+  padding-left: 1em;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.ddukLogo {
+  width: 80px;
+  top: -24px;
+}
+
+#logoDduk1 {
+  position: relative;
+  margin-left: 241px;
+}
+
+#logoDduk2 {
+  position: relative;
+  left: -13px;
+}
+
+.calendar {
+  position: relative;
+  background-color: #fff;
+  width: 334px;
+  height: 518px;
+  border-radius: 30px 30px 0 0;
+}
+
+.yearMonth {
+  text-align: center;
+}
+
+.weekName {
+  padding-top: 30px;
+  text-align: center;
+  padding-left: 11px;
+  display: flex;
+  width: 295px;
+  justify-content: space-between;
+}
+
+.weekName span {
+  margin-right: 0 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.dayDduk {
+  width: 36px;
+}
+
+.day {
+  width: 36px;
+}
+
+.date {
+  text-align: center;
+}
+
+.week {
+  display: flex;
+  width: 318px;
+  flex-direction: row-reverse;
+}
+
+.week2,
+.week3,
+.week4,
+.week5 {
+  justify-content: space-between;
+}
+
+.week6 {
+  flex-direction: row;
+}
+
+.week6 > .day {
+  padding-right: 11px;
+}
+
+#day30 {
+  order: 30;
+}
+
+#day31 {
+  order: 31;
+}
+
+#TodayButton {
+  position: relative;
+  width: 54px;
+  margin-left: 269px;
+  top: -2px;
+}
+
+.month {
+  display: grid;
+  grid-template-columns: repeat(7, 36px);
+  row-gap: 10px;
+  column-gap: 11px;
+}
+
+.notToday {
+  background-color: transparent;
+  color: transparent;
+}
+
+.notToday > img {
+  opacity: 0;
+}
