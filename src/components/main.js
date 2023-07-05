@@ -136,9 +136,6 @@ export default function Main() {
             <Day value={""} day={week6[6]} week={6} />
             {/* </div> */}
           </div>
-          <div className="HowAreYouToday">
-            <img src="dduk3.png" alt="" id="TodayButton"></img>
-          </div>
         </div>
       </div>
     </>

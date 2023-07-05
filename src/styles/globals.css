@@ -106,7 +106,7 @@ h6 {
 .weekName {
   padding-top: 30px;
   text-align: center;
-  padding-left: 11px;
+  padding-left: 21px;
   display: flex;
   width: 295px;
   justify-content: space-between;
@@ -171,6 +171,7 @@ h6 {
   grid-template-columns: repeat(7, 36px);
   row-gap: 10px;
   column-gap: 11px;
+  margin-left: 8px;
 }
 
 .notToday {
